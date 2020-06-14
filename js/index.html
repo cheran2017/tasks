@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+
+<input type="text" name="number1" id="number1">
+<input type="text" name="number2" id="number2">
+<button type="button" onclick="add()">Add</button>
+
+<script type="text/javascript">
+	function add() {
+		var n1 = document.getElementById('number1').value;
+		var n2 = document.getElementById('number2').value;
+		console.log(typeof(n1))
+		console.log(typeof(n2))
+		var sum = parseInt(n1)+parseInt(n2);
+		console.log(sum);
+	}
+	var a = 5; //number
+	var b = 5.5; //number
+	var c = '5';//
+	var d = 'sdfsdf';
+	var e = "a";
+	var r = [1,'s',5.5,[]];//
+	var g = {
+		name : 'vicky',
+		age:15,
+		address : [
+			{
+				street1 : "adress 1" //0
+			},
+			{
+				street2 : "address 2" //1 
+			}
+		]
+	}
+
+	console.log(g.address[1].street2);
+</script>
+</body>
+</html>

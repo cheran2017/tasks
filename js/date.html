@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<input type="date" name="" id="date-input">
+<button onclick="display()">click</button>
+<script type="text/javascript">
+
+	function display() {
+		var input = new Date (document.getElementById('date-input').value);
+		var current = new Date();
+					//5-4
+		console.log((current.getFullYear() - input.getFullYear()))
+		console.log((12 * (current.getFullYear() - input.getFullYear())))
+		console.log(current.getMonth())
+		console.log(input.getMonth())
+		var diff = current.getMonth() - input.getMonth() + 
+	   		(12 * (current.getFullYear() - input.getFullYear()))
+			//total month * (2020-1999)
+		console.log(diff)
+	}
+
+
+	
+</script>
+</body>
+</html>
